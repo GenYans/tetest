@@ -117,11 +117,11 @@ if (hamburger && cola || fries === 3 && nuggets) {
     console.log('Done!')
 } */
 
-/* Цыклы */
+/* Циклы */
 
 /* Первый */
 
-let num = 50;
+/* let num = 50; */
 
 /* while (num <= 55) {
     console.log (num);
@@ -137,10 +137,124 @@ do {
 }
 while (num < 55);
  */
-for (let i = 1;i < 10; i++) {
+/* for (let i = 1;i < 10; i++) {
     if (i === 6) {
         /* break; */
+    /*     continue;
+    }
+    console.log(i);
+} */
+
+/* for (let i = 0; i < 3;i++){
+    console.log(i);
+    for (let j = 0; j < 3;j++) {
+        console.log(j);
+    }    
+} */
+/* Пример  */
+// *
+// **
+// ***
+// ****
+// *****
+// ******
+
+/* let result = '';
+const lenght = 7;
+
+for (let i = 1; i < lenght; i++) {
+
+    for (let j = 0; j < i; j++){
+        result += "*";
+    }
+
+    result += '\n';
+}
+
+console.log(result); */
+/* метка */
+/* first: for (let i = 0; i < 3;i++){
+    console.log(`First level: ${i}`);
+    for (let j = 0; j < 3; j++) {
+        console.log(`Second level: ${j}`);
+        for (let k = 0; k < 3;k++) {
+            if (k === 2) continue first;
+            console.log(`Third level: ${k}`);
+        }    
+    }
+}
+ */
+
+/* Задание №1 */
+
+/* let num = 5;
+while (num <= 10) {
+    console.log (num);
+    num++;
+} */
+/* Задание №2 */
+
+/* Задание №3 */
+
+/* for (let i = 2;i <= 10; i++) {
+    if (i === 3) {
+        continue;
+    }
+    if (i === 5) {
+        continue;
+    }
+    if (i === 7) {
+        continue;
+    }
+    if (i === 9) {
         continue;
     }
     console.log(i);
+} */
+
+/* Задание №4 */
+
+/* for (let i = 2; i <= 16; i++) {
+    if (i % 2 === 0) {
+        continue;
+    } else {
+        console.log(i);
+    }
+}  */
+/* Свой вариант */
+/* 
+let num1 = 3;
+while (num1 < 4){
+    console.log(num1);
+    num1++;
 }
+let num2 = 5;
+while (num2 < 6){
+    console.log(num2);
+    num2++;
+}
+let num3 = 7;
+while (num3 < 8){
+    console.log(num3);
+    num3++;
+}
+let num4 = 9;
+while (num4 < 10){
+    console.log(num4);
+    num4++;
+}
+let num5 = 11;
+while (num5 < 12){
+    console.log(num5);
+    num5++;
+}
+let num6 = 13;
+while (num6 < 14){
+    console.log(num6);
+    num6++;
+}
+let num7 = 15;
+while (num7 < 16){
+    console.log(num7);
+    num7++;
+} */
