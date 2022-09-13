@@ -1,5 +1,5 @@
-/* 'use strict';
-
+'use strict';
+/* 
 const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
 const personalMovieDB = {
@@ -116,3 +116,31 @@ const nuggets = 2;
 if (hamburger && cola || fries === 3 && nuggets) {
     console.log('Done!')
 } */
+
+/* Цыклы */
+
+/* Первый */
+
+let num = 50;
+
+/* while (num <= 55) {
+    console.log (num);
+    num++;
+} */
+
+/* Второй */
+
+/* let num = 50;
+do {
+    console.log(num);
+    num++;
+}
+while (num < 55);
+ */
+for (let i = 1;i < 10; i++) {
+    if (i === 6) {
+        /* break; */
+        continue;
+    }
+    console.log(i);
+}
