@@ -193,6 +193,8 @@ while (num <= 10) {
     num++;
 } */
 /* Задание №2 */
+for ()
+
 
 /* Задание №3 */
 
@@ -257,4 +259,13 @@ let num7 = 15;
 while (num7 < 16){
     console.log(num7);
     num7++;
+} */
+
+/* Задание №5 */
+/* const arr = [5,6,7,8,9,10]; */
+
+
+/* for (let i = 20; i >= 10;i--){
+    if (i === 13) break;
+    console.log(i);
 } */
