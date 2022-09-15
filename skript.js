@@ -193,7 +193,6 @@ while (num <= 10) {
     num++;
 } */
 /* Задание №2 */
-for ()
 
 
 /* Задание №3 */
@@ -269,3 +268,80 @@ while (num7 < 16){
     if (i === 13) break;
     console.log(i);
 } */
+
+
+
+
+/* Функции */
+let num = 20;
+function showFirstMassage(text) {
+    console.log (text);
+    let num = 10; /* Локальная - вызывается в случае если внутри функции есть команда, для написания глобальной ссылки прописать num = 10; */
+    /* Перезаписываем значение глобальной переменной внутри функции */
+    console.log (num); /* Пытается найти переменную num внутри функции, в случае ее отсутсвия всегда поднимается на уровень выше, и ищет там */
+}
+
+showFirstMassage("Hello Kostya!");
+console.log (num);
+
+function calc(a,b) {
+    return (a + b);
+}
+
+console.log(calc(4,3));
+console.log(calc(5,6));
+console.log(calc(10,6));
+
+/* Function declaration */
+
+function ret() {
+    let num = 50;
+    return num;
+}
+
+const anotherNum = ret();
+console.log(anotherNum);
+
+/* Function expression */
+const loger = function() {
+    console.log("Hello");
+};
+loger();
+
+/* Стрелочная функция */
+const calc = (a, b) => {
+    console.log("1");
+    return a + b;
+};
+
+const usdCurr = 28;
+const discount = 0.9;
+
+function convert(amount, curr){
+    return curr * amount;
+}
+convert(500, usdCurr); /* делаем функцию универсальной, не зависещей от конкретных значений */
+
+function promotion (result) {
+    console.log(result * discount);
+}
+
+promotion(convert(500, usdCurr);
+
+/* const res = convert(500, usdCurr);
+promotion(res); */
+
+/* Пример */
+function test(){
+    for (let i = 0; i < 5; i++) {
+        console.log(i);
+        if (i === 3) {return}
+    }
+    console.log('Done!')
+}
+test();
+
+/* Пример 2 */
+/* function doNothing () {};
+console.log(doNothing() === undefined);
+ */
