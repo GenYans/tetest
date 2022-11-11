@@ -21,7 +21,8 @@ for (let i = 0; i < 2; i++) {
         console.log('done');
     }else {
         console.log('error');
-        i--; /* В случае если пользователь не выполнил условия, то возвращяемся на повторение цикла,и зададим еще раз вопросы */
+        i--; /* В случае если пользователь не выполнил условия, то возвращяемся на повторение цикла,
+        и зададим еще раз вопросы */
 /*     }
       
 }
@@ -39,3 +40,30 @@ if (personalMovieDB.count < 10) {
 console.log(personalMovieDB); */
     
 /* Вариант №2 */
+
+/*  */
+const str = "test";
+const arr = [1,2,3]; 
+
+console.log(str.toUpperCase()); /* Увеличение текста */
+
+const fruit = "Some fruit";
+
+console.log(fruit.indexOf("fruit")); /*  */
+
+const logg = "Hello world";
+
+console.log(logg.slice(6, 11)); /* Вырезает нужную строку (заданные цыфры - позиция символов) 
+*Можно указать начальный символ без конечного */
+/* При отрицательном обратный метод */
+
+console.log(logg.substring(6, 11)); /* Не поддерживает отрицательные символы */
+
+/* Math -  */
+
+const num = 12.2;
+console.log(Math.round(num)); /* Округление для ближайшего целого */
+
+const test = "12.2px";
+console.log(parseInt(test)); /* Переводит число в другую систему исчесления десятичная, двоичная итд */
+console.log(parseFloat(test)); /* Возращяет число в десятичный вариант */
