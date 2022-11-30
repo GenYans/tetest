@@ -273,15 +273,15 @@ while (num7 < 16){
 
 
 /* Функции */
-let num = 20;
+/* let num = 20;
 function showFirstMassage(text) {
     console.log (text);
-    let num = 10; /* Локальная - вызывается в случае если внутри функции есть команда, для написания глобальной ссылки прописать num = 10; */
+    let num = 10; */ /* Локальная - вызывается в случае если внутри функции есть команда, для написания глобальной ссылки прописать num = 10; */
     /* Перезаписываем значение глобальной переменной внутри функции */
-    console.log (num); /* Пытается найти переменную num внутри функции, в случае ее отсутсвия всегда поднимается на уровень выше, и ищет там */
-}
+   /*  console.log (num); */ /* Пытается найти переменную num внутри функции, в случае ее отсутсвия всегда поднимается на уровень выше, и ищет там */
+/* } */
 
-showFirstMassage("Hello Kostya!");
+/* showFirstMassage("Hello Kostya!");
 console.log (num);
 
 function calc(a,b) {
@@ -291,25 +291,25 @@ function calc(a,b) {
 console.log(calc(4,3));
 console.log(calc(5,6));
 console.log(calc(10,6));
-
+ */
 /* Function declaration */
 
-function ret() {
+/* function ret() {
     let num = 50;
     return num;
 }
 
 const anotherNum = ret();
-console.log(anotherNum);
+console.log(anotherNum); */
 
 /* Function expression */
-const loger = function() {
+/* const loger = function() {
     console.log("Hello");
 };
-loger();
+loger(); */
 
 /* Стрелочная функция */
-const calc = (a, b) => {
+/* const calc = (a, b) => {
     console.log("1");
     return a + b;
 };
@@ -319,27 +319,27 @@ const discount = 0.9;
 
 function convert(amount, curr){
     return curr * amount;
-}
-convert(500, usdCurr); /* делаем функцию универсальной, не зависещей от конкретных значений */
+} */
+/* convert(500, usdCurr); */ /* делаем функцию универсальной, не зависещей от конкретных значений */
 
-function promotion (result) {
+/* function promotion (result) {
     console.log(result * discount);
 }
 
-promotion(convert(500, usdCurr);
+promotion(convert(500, usdCurr); */
 
 /* const res = convert(500, usdCurr);
 promotion(res); */
 
 /* Пример */
-function test(){
+/* function test(){
     for (let i = 0; i < 5; i++) {
         console.log(i);
         if (i === 3) {return}
     }
     console.log('Done!')
 }
-test();
+test(); */
 
 /* Пример 2 */
 /* function doNothing () {};
@@ -349,7 +349,7 @@ console.log(doNothing() === undefined);
 
 /* Callback - функция, которая должна быть выполнена после того как другая функция завершила свое выполнение */
 
-function first() {
+/* function first() {
     // Do something
     setTimeout(function() {
         console.log(1);
@@ -373,7 +373,224 @@ function done() {
 }
 
 lernJS('JavaScript', done);
-
+ */
 
 /* Объекты общирный курс (ассециативные массивы) */
 
+/* Обьекты диструктуризация */
+
+/* const options = {
+    name: 'test',
+    width: 1024,
+    height: 1024,
+    colors: {
+        border: 'black',
+        bg: 'red'
+    },
+    makeTest: function() {
+        console.log("Test");
+    }
+};
+
+options.makeTest();
+
+const {border, bg} = options.colors;
+console.log(border);
+
+console.log(Object.keys(options).length); */
+
+
+/* const position = {
+    mail: 'geas',
+    class: 24,
+    milk: 5
+};
+
+console.log(Object.keys(position).length); */
+/* let counter = 0;
+
+for (let key in options) {
+    if (typeof(options[key]) === 'object') {
+        for (let i in options[key]) {
+            console.log(`Свойство ${i} имеет значение ${options[key][i]}`);
+        }
+    } else {
+        console.log(`Свойство ${key} имеет значение ${options[key]}`);
+        counter++;
+    }
+}
+console.log(counter); */
+
+/* const arr = [0, 1, 2, 3, 6, 8]; */
+/* arr[99] = 0;
+console.log(arr.length);
+console.log(arr); */
+/* 
+arr.forEach(function(item, i, arr) {
+    console.log(`${i}: ${item} внутри массива ${arr}`);
+});
+
+const mas = [0, 1, 2, 6, 8];
+
+mas.forEach(function(name, bac, mas) {
+    console.log(`${name}- ${bac} next title ${mas}`);
+}); */
+
+/* arr.pop(); -  *//* удаляет последний элемент */
+/* arr.push(10); -  *//* добовляет элемент в массив */
+
+
+/* console.log(arr); */
+
+/* for(let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+}
+
+for(let value of arr) {
+    console.log(value);
+} */
+
+/* const str = prompt("", "");
+const products = str.split(", ");
+products.sort();
+console.log(products.join('; ')); */
+
+/* const arr = [2, 13, 26, 8, 10];
+arr.sort(compareNum);
+console.log(arr);
+
+function compareNum(a, b) {
+    return a - b;
+} */
+/*  
+let a = 5;
+    b = a;
+
+b = b + 5;
+
+console.log(a);
+console.log(b);
+
+const obj = {
+    a: 5,
+    b: 1
+}; */
+
+/* const copy = obj;
+
+copy.a = 10;
+
+console.log(copy);
+console.log(obj); */
+
+
+/* function copy(mainObj) {
+    let objCopy = {};
+
+    let key;
+    for(key in mainObj) {
+        objCopy[key] = mainObj[key];
+    }
+    return objCopy;
+}
+
+const numbers = {
+    a: 2,
+    b: 5,
+    c: {
+        x: 7,
+        y: 4
+    }
+};
+
+const newNumbers = copy(numbers);
+
+newNumbers.a = 10;
+newNumbers.c.x = 10;
+console.log(newNumbers);
+console.log(numbers); */
+
+/* Object assign */
+/* const add = {
+    d: 17,
+    e: 20
+};
+
+const clone = Object.assign({}, add);
+
+clone.d = 20; */
+
+/* console.log(add);
+console.log(clone); */
+/* 
+const oldArray = ['a', 'b', 'c'];
+const newArray = oldArray.slice();
+
+newArray[1] = 'asdasdasas';
+console.log(newArray);
+console.log(oldArray);
+
+const video = ['youtube', 'vimeo', 'rutube'],
+      blogs = ['wordpress', 'livejournal', 'blogger'],
+      internet = [...video, ...blogs, 'vk'];
+
+      console.log(internet);
+
+function log(a, b, c) {
+    console.log(a);
+    console.log(b);
+    console.log(c);
+}
+
+const num = [2, 5, 7];
+
+log(...num);
+
+const array = ["a", "b"];
+
+const newAarray = [...array];
+
+console.log(newAarray);
+
+const q = {
+    one: 1,
+    two: 2
+};
+
+const newObj = {...q};
+
+console.log(newObj); */
+
+/* const Kost = [1, 2, 3];
+
+const Gena = {...Kost};
+
+console.log(Gena); */
+
+/* let str = 'some';
+let strObj = new String(str);
+
+console.log(typeof(str));
+console.log(typeof(strObj)); */
+
+
+const soldier = {
+    health: 400,
+    armor: 100,
+    sayHello: function() {
+        console.log('Hello');
+    }
+};
+
+const John = Object.create(soldier);
+
+/* const John = {
+    health: 100
+}; */
+
+/* John.__proto__ = soldier; */
+
+/* Object.setPrototypeOf(John, soldier); */
+
+/* console.log(John.armor); */
+John.sayHello();
